@@ -1,9 +1,9 @@
 body {
     margin:0;
     padding:0;
-    background:#ccc;
+    background-image: url("../image/logo.png");
     font-family: 'Roboto Condensed', sans-serif;
-  
+     background-repeat: no-repeat;
   }
   
   ul {
