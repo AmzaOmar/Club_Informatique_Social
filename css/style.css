@@ -127,3 +127,30 @@ body {
   ul li:hover:nth-child(4) a:after{
     background: #e46880;
   }
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    top: 40%; /* Ajusté pour centrer verticalement */
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+
+  ul li a {
+    width: 160px;
+    height: 60px;
+    padding-left: 15px;
+  }
+
+  ul li a .fa {
+    font-size: 30px;
+    line-height: 60px;
+    padding-right: 10px;
+  }
+
+  ul li a span {
+    top: 20px;
+    letter-spacing: 2px;
+  }
+}
