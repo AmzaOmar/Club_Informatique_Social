@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+        
         body {
             margin: 0;
             padding: 0;
@@ -43,14 +44,15 @@
 
         ul {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Permet aux icônes de s’adapter à l’espace sans passer en colonne */
             justify-content: center;
             list-style: none;
             padding: 0;
+            gap: 10px; /* Ajoute un espacement entre les icônes */
         }
 
         ul li {
-            margin: 10px;
+            margin: 5px;
         }
 
         ul li a {
@@ -88,16 +90,11 @@
             color: #333;
         }
 
-        /* Responsive pour mobile */
-        @media screen and (max-width: 768px) {
-            body {
-                height: auto;
-                padding: 20px;
-            }
-
+        /* Responsive pour petits écrans */
+        @media screen and (max-width: 600px) {
             .background-text {
                 font-size: 40px;
-                top: 25%;
+                top: 20%;
             }
 
             .welcome-text {
@@ -105,11 +102,20 @@
             }
 
             ul {
-                flex-direction: column;
+                gap: 5px; /* Réduit l'espacement entre les icônes sur mobile */
             }
 
-            ul li {
-                margin: 8px 0;
+            ul li a {
+                width: 50px; /* Réduit la taille des icônes */
+                height: 50px;
+            }
+
+            ul li a i {
+                font-size: 20px;
+            }
+
+            ul li a span {
+                font-size: 10px;
             }
         }
     </style>
