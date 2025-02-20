@@ -3,37 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
+   
+    <title>Sangamar 2</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
-        </style>
-        <ul>
-          <li>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("../image/logo.png") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative;
+            text-align: center;
+        }
+        
+        .background-text {
+            font-size: 100px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            text-transform: uppercase;
+        }
+        
+        .welcome-text {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            margin: 0 15px;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s, background 0.3s;
+            position: relative;
+        }
+        
+        ul li a:hover {
+            transform: scale(1.1);
+        }
+        
+        ul li a i {
+            font-size: 36px;
+            color: #333;
+        }
+        
+        ul li:nth-child(1) a:hover { background: #3b5998; color: white; }
+        ul li:nth-child(2) a:hover { background: #FF0000; color: white; }
+        ul li:nth-child(3) a:hover { background: #34A853; color: white; }
+        ul li:nth-child(4) a:hover { background: #E4405F; color: white; }
+        
+        ul li a span {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-text">Sangamar 2</div>
+    <div class="welcome-text">Bienvenue à l'Hôtel Sangamar 2 - Détente et Luxe</div>
+    <ul>
+        <li>
             <a href="#" target="_blank">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <span> - Facebook</span>
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
             </a>
-          </li>
-          <li>
+        </li>
+        <li>
             <a href="#" target="_blank">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <span> - Youtube</span>
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
             </a>
-          </li>
-          <li>
+        </li>
+        <li>
             <a href="https://clubinformatique-uasz.com/#/" target="_blank">
-              <i class="fa fa-google-plus" aria-hidden="true"></i>
-              <span> - CI-UASZ</span>
+                <i class="fab fa-google-plus"></i>
+                <span>Restauration</span>
             </a>
-          </li>
-          <li>
+        </li>
+        <li>
             <a href="#" target="_blank">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <span> - Instagram</span>
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
             </a>
-          </li>
+        </li>
+    </ul>
 </body>
 </html>
