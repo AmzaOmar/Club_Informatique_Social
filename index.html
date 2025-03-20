@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sangamar 2</title>
+    <title>B&B Fitness</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
@@ -11,7 +11,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: url("../image/logo.png") no-repeat center center fixed;
+            background: url("../image/gym-background.jpg") no-repeat center center fixed;
             background-size: cover;
             font-family: 'Roboto Condensed', sans-serif;
             display: flex;
@@ -20,12 +20,13 @@
             height: 100vh;
             flex-direction: column;
             text-align: center;
+            color: white;
         }
 
         .background-text {
             font-size: 60px;
             font-weight: bold;
-            color: rgba(0, 0, 0, 0.1);
+            color: rgba(255, 255, 255, 0.1);
             position: absolute;
             top: 30%;
             left: 50%;
@@ -35,24 +36,19 @@
         }
 
         .welcome-text {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 20px;
+            font-size: 24px;
             font-weight: bold;
             padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
         }
 
         ul {
             display: flex;
-            flex-wrap: wrap; /* Permet aux icônes de s’adapter à l’espace sans passer en colonne */
             justify-content: center;
             list-style: none;
             padding: 0;
-            gap: 10px; /* Ajoute un espacement entre les icônes */
-        }
-
-        ul li {
-            margin: 5px;
+            gap: 15px;
         }
 
         ul li a {
@@ -61,8 +57,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             background: white;
             border-radius: 50%;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -75,7 +71,7 @@
         }
 
         ul li a i {
-            font-size: 28px;
+            font-size: 32px;
             color: #333;
         }
 
@@ -86,11 +82,10 @@
 
         ul li a span {
             margin-top: 5px;
-            font-size: 12px;
+            font-size: 14px;
             color: #333;
         }
 
-        /* Responsive pour petits écrans */
         @media screen and (max-width: 600px) {
             .background-text {
                 font-size: 40px;
@@ -98,31 +93,27 @@
             }
 
             .welcome-text {
-                font-size: 16px;
-            }
-
-            ul {
-                gap: 5px; /* Réduit l'espacement entre les icônes sur mobile */
+                font-size: 18px;
             }
 
             ul li a {
-                width: 50px; /* Réduit la taille des icônes */
-                height: 50px;
+                width: 60px;
+                height: 60px;
             }
 
             ul li a i {
-                font-size: 20px;
+                font-size: 24px;
             }
 
             ul li a span {
-                font-size: 10px;
+                font-size: 12px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="background-text">Sangamar 2</div>
-    <div class="welcome-text">Bienvenue à l'Hôtel Sangamar 2 - Détente et Luxe</div>
+    <div class="background-text">B&B Fitness</div>
+    <div class="welcome-text">Bienvenue chez B&B Fitness - Votre corps, votre force !</div>
     <ul>
         <li>
             <a href="#" target="_blank">
@@ -137,9 +128,9 @@
             </a>
         </li>
         <li>
-            <a href="https://clubinformatique-uasz.com/#/" target="_blank">
-                <i class="fab fa-google-plus"></i>
-                <span>Restauration</span>
+            <a href="#" target="_blank">
+                <i class="fas fa-dumbbell"></i>
+                <span>Nos Programmes</span>
             </a>
         </li>
         <li>
